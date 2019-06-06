@@ -1,0 +1,877 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    font-size: 12px;
+    text-decoration: none; 
+}
+i{
+    font-style: normal ;
+    display: inline-block;
+    color: #666;
+}
+em{
+    font-style: normal ;
+    display: inline-block;
+    color: #666;
+}
+body{
+    background: #f0f3ef;
+}
+.wrapper{
+    width: 100%;
+    border: 0px solid #0f0;
+}
+
+/* 广告位 top */
+.wrapper .leaflet{
+    width: 100%;
+    height:80px;
+    background: rgb(212, 34, 64);
+}
+.wrapper .leaflet .leaflet-content{
+    width:1190px;
+    height: 80px;
+    background-image: url('../img/demo.jpg');
+    background-size: 100% 100%;
+    margin: 0 auto;
+    position: relative;
+    cursor:pointer;
+}
+.wrapper .leaflet .leaflet-content span{
+    display: inline-block;
+    color: #fff;
+    cursor:pointer;
+    font-size:14px;
+    position: absolute;
+    top: 6px;
+    right:0px;
+    width:20px;
+    height: 20px;
+    background: #2d2d2d;
+    opacity: 0.3;
+    text-align: center;
+    line-height: 20px; 
+}
+.wrapper .leaflet .leaflet-content .topimg{
+    width:190px;
+    height:80px;
+    background-size: 100% 100%;
+    background: url('../img/top.png');
+}
+
+/*  */
+.navigation{
+    width:100%;
+    height:30px;
+    background: #e3e4e5;
+}
+.shortcut { 
+    width: 1190px;
+    height: 30px;
+    line-height:30px;
+    background: #e3e4e5;
+    color: #999;
+    margin: 0 auto;
+    position: relative;
+}
+.shortcut .left {
+    display: inline-block;
+    height:100%;
+    margin-left:200px;
+}
+.shortcut .left .location {
+    height: 100%;
+    float:right;
+}
+.shortcut .right ul{
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    right: 0px;
+    height: 30px;
+    line-height: 30px;
+    box-sizing: border-box;
+}
+.shortcut .right ul li {
+    display: inline-block;
+    text-align: center;
+    box-sizing: border-box;
+}
+.right li:nth-child(even) {
+    width: 1px;
+    height: 10px;
+    background: #999;
+}
+.mobileF{
+    box-sizing: border-box;
+    width: 64px;
+    height: 64px;
+    border: 1.5px solid #ccc;
+
+}
+
+.mobile {
+    background: url(../img/xiao-1.jpg) 50% no-repeat;
+    background-size:100% 100%;
+    border: 2 solid #999;
+    margin: 0px auto;
+    position: relative;
+    z-index: 100;
+}
+.mobile:before {
+    content: "";
+    position: absolute;
+    display: block;
+    top: -9px;
+    left: 50%;
+    margin-left: -5px;
+    width: 0;
+    height: 0;
+    line-height: 0;
+    font-size: 0;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #e4e4e4 #e4e4e4 #f6f6f6;
+}
+/* logo */
+.header{
+    position: relative;
+    z-index:1;
+}
+.header .header-content{
+    width: 1190px;
+    height: 140px;
+    margin: 0 auto;
+    position: relative;
+    color: rgb(102,102,102);
+    font: 12px/1.5 "Microsoft YaHei", tahoma, arial, "Hiragino Sans GB", "\\5b8b体", sans-serif;
+    z-index:0;
+}
+.header-content .logo{
+    width:190px;
+    height:170px;
+    background: #fff;
+    overflow: hidden;
+    position: absolute;
+    top: -30px;
+    left: 0;
+    border-radius:4px;
+}
+
+.header-content .logo .logo_extend{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.header-content .logo .logo_extend .J_logo_extend{
+    width: 100%;
+    height: 100%;
+    display: inline-block;
+    background: url(../img/locas.gif);
+    background-size: 100% 100%;
+}
+.search{
+    position: relative;
+    z-index: 1;
+    height: 60px;
+    border: 0px solid red;
+}
+.header-content .settleup{
+    display: inline-block;
+    width:188px;
+    height:33px;
+    line-height:33px;
+    text-align:center;
+    position: relative;
+    top:-32px;
+    left:910px;
+    background:#fff;
+    z-index:10;
+}
+.settleup .cw-icon{
+    width:100%;
+    height:33px;
+    color: #f10214;
+}
+.cw-icon .icin-tu-1{
+    position: absolute;
+    top:8px;
+    left:42px;
+    width:16px;
+    height:16px;
+    background: url('../img/icon-1.png');
+    background-size: 100% 100%;
+    cursor:pointer;
+}
+.cw-icon .icon-zi{
+    cursor:pointer;
+}
+.cw-icon .icin-tu-2{
+    position: absolute;
+    top: 4px;
+    left:128px;
+    width:14px;
+    height:14px;
+    background: url('../img/icon-2.png');
+    background-size: 100% 100%;
+    cursor:pointer;
+}
+.settleup .dropdown-layer{
+    width:316px;
+    height: 70px;
+    background:#fff;
+    position:absolute;
+    top: 33px;
+    right: 0;
+    display: none;
+    box-shadow: 0px 1px 1px #aaa;
+    line-height: 70px;
+}
+.dropdown-layer .layer-tu{
+    width: 56px;
+    height: 49px;
+    display: inline-block;
+    background:url('../img/jingdong.png'); 
+    background-size: 100% 100%;
+    margin:0px 0px 0px 0px;
+    vertical-align: -20px;
+    cursor:pointer;
+}
+.dropdown-layer .layer-zi{
+    display: inline-block;
+    color: #999;
+}
+.header .hotwords{
+    overflow: hidden;
+    position: absolute;
+    left: 320px;
+    top: 65px;
+    width: 550px;
+    height: 20px;
+    line-height: 20px;
+}
+.header .hotwords a{
+    color: #999;
+    float: left;
+    margin-right: 10px;
+    white-space: nowrap;
+}
+.header .hotwords a:first-child{
+    color: #f10215;
+}
+.header .hotwords a:hover{
+    color: #c81623;
+}
+.header .navitems{
+    width: 790px;
+    height: 40px;
+    overflow: hidden;
+    position: absolute;
+    left: 200px;
+    bottom: 0;
+    padding-top: 20px;
+}
+.navitems ul{
+    float: left;
+}
+.navitems ul li{
+    float: left;
+    margin-left: 30px;
+}
+.navitems ul li a{
+    position: relative;
+    display: block;
+    height: 40px;
+    line-height: 40px;
+    font-size: 14px;
+    color: #333;
+}
+.navitems .spacer{
+    overflow: hidden;
+    display: inilne-block;
+    float: left;
+    margin-top: 15px;
+    margin-left: 20px;
+    margin-right: -10px;
+    width: 1px;
+    height: 10px;
+    background-color: #ccc;
+}
+.navitems ul li a:hover{
+    color: #c81623;
+}
+.header .treasure{
+    position: absolute;
+    right: 0;
+    bottom: 10px;
+    width: 190px;
+    height: 40px;
+}
+.header .treasure a{
+    display: block;
+    width: 190px;
+    height: 40px;
+    background: url('../img/chou.png') center no-repeat;
+}
+/* fs */
+.fs{
+    position: relative;
+    display: inline-block;
+    width: 100%;
+}
+.fs .fs-content{
+    position: relative;
+    /* overflow: hidden; */
+    width:1190px;
+    height: 480px;
+    margin:0 auto;
+    background: #f0f3ef;
+    z-index: 0;
+}
+
+.fs .fs-back{
+    position: absolute;
+    height:780px;
+    width: 100%;
+    top:0;
+    left:0;
+    z-index: -10;
+}
+.fs .fs-back a{
+    display:inline-block;
+    height: 770px;
+    margin-top: 10px;
+    background: url('../img/benjing-1.png') 50% 0px no-repeat;
+    width: 100%;
+    z-index: -10;
+}
+.fs-menu{
+    position: relative;
+    width: 190px;
+    height: 480px;
+    background: #fff;
+    border-top: 1px solid #ddd;
+    box-sizing: border-box;
+    display: inline-block;
+   
+}
+.fs-slide{
+    display: inline-block;
+    overflow: hidden;
+    width:590px;
+    height:470px;
+    background:#fff;
+    position: absolute;
+    top: 10px;
+    left:198px;
+    color: hsla(0,0%,100%,0.4);
+}
+.fs-show{
+    display: inline-block;
+    width: 190px;
+    height: 470px;
+    background: #fff;
+    position: absolute;
+    top: 10px;
+    left: 798px;
+}
+.fs-show .place-1{
+    width: 190px;
+    height: 150px;
+    background: url('../img/place-1.png');
+    background-size: 100% 100%;
+}
+.fs-show .place-2{
+    width: 190px;
+    height: 150px;
+    background: url('../img/place-2.png');
+    background-size: 100% 100%;
+    margin-top: 10px;
+}
+.fs-show .place-3{
+    width: 190px;
+    height: 150px;
+    background: url('../img/place-3.png');
+    background-size: 100% 100%;
+    margin-top: 10px;
+}
+.fs-vip{
+    width: 190px;
+    height:480px;
+    position: absolute;
+    top: 0px;
+    right: 0;
+    margin: 0 auto;
+    overflow: hidden;
+}
+.vip-1{
+    width: 100%;
+    height: 150px;
+    background: #fff;
+    margin-top: 10px;
+}
+.vip-1 .vip-1-com{
+    width: 100%;
+    height: 78px;
+    padding-top:62px;
+    position: relative; 
+}
+.vip-1 .vip-1-com .vip-logo{
+    display: inline-block;
+    width:55px;
+    height:55px;
+    border-radius:50%;
+    box-shadow: 3px 6px 20px #c3c3c3;
+    overflow: hidden;
+    position: absolute;
+    top: -10px;
+    left: 67.5px;
+    background: url('../img/no_login.jpg');
+    background-size: 100% 100%;
+    cursor: pointer;
+}
+.vip-1 .vip-1-com .vip-greet-title{
+    display: inline-block;
+    overflow: hidden;
+    line-height: 20px;
+    width: 100%;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    color: #888;
+    text-align:center;
+}
+.vip-1 .vip-1-com .vip-greet-select{
+    color: #666;
+    text-align: center;
+}
+.vip-1 .vip-1-com .vip-greet-select span{
+    cursor: pointer;
+    padding:0 2px;
+}
+.vip-service{
+    margin-top: 10px;
+    height: 25px;
+    font-size: 0;
+    text-align: center;
+}
+.vip-service .vip-service-1{
+    display: inline-block;
+    margin: 0 5px;
+    width: 70px;
+    height: 25px;
+    line-height: 25px;
+    font-size: 12px;
+    text-align: center;
+    color: #e43f3b;
+    border-radius: 13px;
+    box-shadow: 6px 8px 20px rgba(45,45,45,.15);
+}
+.vip-service .vip-service-2{
+    display: inline-block;
+    margin: 0 5px;
+    width: 70px;
+    height: 25px;
+    line-height: 25px;
+    font-size: 12px;
+    text-align: center;
+    background: #363634;
+    color: #e5d790;
+    border-radius: 13px;
+    box-shadow: 6px 8px 20px rgba(45,45,45,.15);
+}
+.news{
+    width: 190px;   
+}
+.news .news-title{
+    width: 190px;
+    height: 26px;
+    padding-top: 8px;
+    background: #fff;
+    position: relative;
+
+}
+.news .news-title div{
+    display: inline-block;
+    padding: 0 15px;
+    height: 16px;
+    cursor: pointer;
+    color: #333;
+}
+.news .news-title .notices{
+    border-left: 1px solid #aaa;
+}
+.news .news-title .more{
+    position:absolute;
+    color:#666;
+    right: 0;
+}
+.news .news-title .active_line{
+    display: inline-block;
+    border-bottom: 2px solid #e01121;
+    position: absolute;
+    bottom: 4px;
+    left: 0;
+    margin-left:13px;
+    transition: left 0.3s linear;
+}
+.news-com{
+    display: inline-block;
+    width: 176px;
+    height:96px;
+    padding-top:0px; 
+    padding-left:14px; 
+    background: #fff;
+    margin-top:0px;
+  
+}
+.news-com  > div{
+    display: none;
+}
+.news-com > div > div{
+    width: 160px;
+    height: 22px;
+    line-height: 22px;
+    color: #666;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    cursor: pointer;
+}
+.news-com .sales-comtent{
+    display: block;
+}
+.services{
+    display: inline-block;
+    width: 190px;
+    position: relative;
+}
+
+.services .services-entry{
+    display: inline-block;
+    /* display: none; */
+    padding: 10px 5px 10px;
+    background: #fff;
+    width: 190px;
+    height: 196px;
+}
+
+.services .services-entry::before{
+    content:'';
+    display:inline-block;
+    width: 85%;
+    border-top:1px solid #eee;
+    position: absolute;
+    top: 0px;
+    left:14px;
+}
+.entry-1{
+    display: inline-block;
+    /* display: none; */
+}
+.entry-1-a{
+    /* display: inline-block; */
+    display: none;
+}
+.entry-2{
+    display: inline-block;
+}
+.entry-3{
+    display: inline-block;
+}
+.services .services-entry .entry-1-a{
+    height: 30px;
+}
+.services .services-entry > div > div{
+    display: inline-block;
+    overflow: hidden;
+    width: 42px;
+    height: 55px;
+    text-align:center;
+    position: relative;
+}
+.services .services-entry > div > div > div{
+    margin-top:2px ;
+    top:4px;
+    left:14px;
+    cursor: pointer;
+}
+.services .services-entry > div > div span{
+    display: inline-block;
+    width: 100%;
+    margin-top:30px ;
+    color: #888;
+    cursor: pointer;
+}
+.services-entry > div > div > .img-1{
+    display: inline-block;
+    position: absolute;
+    overflow: hidden;
+    width:15px;
+    height:20px;
+    background: url('../img/hui-1.png');
+    background-repeat:no-repeat;
+    background-size: 100% 100%; 
+}
+
+.services-entry > div > div > div.img-2{
+    display: inline-block;
+    position: absolute;
+    overflow: hidden;
+    width:20px;
+    height:20px;
+    background: url('../img/hui-2.png');
+    background-repeat:no-repeat;
+    background-size: 100% 100%;
+    left:12px; 
+}
+.services-entry > div > div > div.img-3{
+    display: inline-block;
+    position: absolute;
+    overflow: hidden;
+    width:18px;
+    height:20px;
+    background: url('../img/hui-3.png');
+    background-repeat:no-repeat;
+    background-size: 100% 100%;
+    left:12px;  
+}
+.services-entry > div > div > div.img-4{
+    display: inline-block;
+    position: absolute;
+    overflow: hidden;
+    width:24px;
+    margin-top:-1px;
+    height:24px;
+    background: url('../img/hui-4.png');
+    background-repeat:no-repeat;
+    background-size: 100% 100%;
+    top: 4px;
+    left:9px;   
+}
+
+.services-entry > div > div > div.img-5{
+    display: inline-block;
+    position: absolute;
+    overflow: hidden;
+    width:20px;
+    height:22px;
+    background: url('../img/hui-5.png');
+    background-repeat:no-repeat;
+    background-size: 100% 100%;
+    left:12px; 
+}
+.services-entry > div > div > div.img-6{
+    display: inline-block;
+    position: absolute;
+    overflow: hidden;
+    width:20px;
+    height:20px;
+    background: url('../img/hui-6.png');
+    background-repeat:no-repeat;
+    background-size: 100% 100%; 
+    left:12px;
+}
+.services-entry > div > div > div.img-7{
+    display: inline-block;
+    position: absolute;
+    overflow: hidden;
+    width:20px;
+    height:20px;
+    background: url('../img/hui-7.png');
+    background-repeat:no-repeat;
+    background-size: 100% 100%; 
+    left:10px;
+}
+.services-entry > div > div > div.img-8{
+    display: inline-block;
+    position: absolute;
+    overflow: hidden;
+    width:20px;
+    height:20px;
+    background: url('../img/hui-8.png');
+    background-repeat:no-repeat;
+    background-size: 100% 100%; 
+    top: 4px;
+    left:12px;
+}
+.services-entry > div > div > div.img-9{
+    display: inline-block;
+    position: absolute;
+    overflow: hidden;
+    width:20px;
+    height:20px;
+    background: url('../img/hui-9.png');
+    background-repeat:no-repeat;
+    background-size: 100% 100%; 
+    left:11px;
+}
+.services-entry > div > div > div.img-10{
+    display: inline-block;
+    position: absolute;
+    overflow: hidden;
+    width:20px;
+    height:20px;
+    background: url('../img/hui-10.png');
+    background-repeat:no-repeat;
+    background-size: 100% 100%; 
+    left:11px;
+}
+.services-entry > div > div > div.img-11{
+    display: inline-block;
+    position: absolute;
+    overflow: hidden;
+    width:24px;
+    height:24px;
+    background: url('../img/hui-11.png');
+    background-repeat:no-repeat;
+    background-size: 100% 100%; 
+    left:7px;
+}
+.services-entry > div > div > div.img-12{
+    display: inline-block;
+    position: absolute;
+    overflow: hidden;
+    width:16px;
+    height:20px;
+    background: url('../img/hui-12.png');
+    background-repeat:no-repeat;
+    background-size: 100% 100%; 
+    left:12px;
+}
+.services-entry .services-con{
+    display: inline-block;
+    width: 180px;
+    height: 180px;
+    position: relative;
+}
+.services-entry .services-con .services-con-1{
+    display: none;
+    position: absolute;
+    width: 100%;
+    height: 130px;
+    top:0;
+    left:0;
+   
+}
+.services-con .services-con-1 .tit{
+    display: inline-block;
+
+}
+.services-con .services-con-1 .tit i{
+    border-radius: 14px;
+
+}
+.services-con .services-con-1 .tit i:nth-child(2){
+    color: #c81623;
+}
+
+.services-con .services-con-1 .COM{
+    display: inline-block;
+    width: 160px;
+    height: 130px;  
+}
+.services-con .services-con-1 .COM .COM-1{
+    display: inline-block;
+    width: 160px;
+    height: 130px; 
+}
+.COM .COM-1 i{
+    width: 100%;
+    height: 26px;
+    position: relative;
+    margin-top: 6px;
+}
+.COM .COM-1 i.i-1 em{
+    position: absolute;
+    top: 0;
+    left: 3px;
+    height: 20px;
+    text-align: left;
+}
+.COM .COM-1 i.i-1 input{
+    position: absolute;
+    left: 34px;
+    width: 120px;
+    z-index: 20;
+}
+.COM-1 .i-2{
+    display: inline-block;
+    position: absolute;
+    top:50px;
+    left:9px;
+    width: 160px;
+    height: 26px;
+    border: 0px solid red;
+} 
+.COM-1 .i-2 em{
+    margin-right:4px;
+}
+.COM-1 .i-2 select{
+    width: 120px;
+    border:1px solid #9f9;
+}
+.jia-ge{
+    display: inline-block;
+    color: red;
+    position: absolute;
+    top: 72px;
+    left: 9px;
+}
+.chongzhi{
+    display: inline-block;
+    color: #fff;
+    position: absolute;
+    top: 92px;
+    left: 9px;
+    width:60px;
+    height: 20px;
+    cursor: pointer;
+    border-radius:14px;
+    background: #c81623; 
+    line-height: 20px;
+}
+.zhi-a{
+    display: inline-block;
+    color: green;
+    position: absolute;
+    top: 117px;
+    left: 9px;
+    cursor: pointer;
+}
+.zhi-a:hover{
+    color:#c81623;
+}
+.services-entry .services-con .services-con-2{
+    display: none;
+    position: absolute;
+    top:0;
+    left:0;
+}
+.services-entry .services-con .services-con-3{
+    display: none;
+    position: absolute;
+    top:0;
+    left:0;
+}
+.services-entry .services-con .services-con-4{
+    display: none;
+    position: absolute;
+    top:0;
+    left:0;
+}
+.services-entry .services-con .close{
+    display: none;
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    line-height: 16px;
+    text-align: center;
+    top: -45px;
+    right: 4px;
+    font-size: 18px;
+    color: #bbb;
+    cursor: pointer;
+}
